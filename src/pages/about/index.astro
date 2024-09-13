@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import aboutAnimeImage from '../../../public/cute-anime-girl.png';
+---
+
+<Layout title="About Me">
+  <main class="flex flex-col items-center justify-center min-h-screen w-full p-4 md:flex-row md:gap-8 md:p-0">
+    <div class="flex flex-col md:flex-row gap-4 items-center">
+      <div class="text-thistle-100">
+        <h1 class="text-4xl md:text-5xl lg:text-7xl text-center md:text-left font-bold max-w-2xl">
+          About Me
+        </h1>
+        <p class="text-lg text-center md:text-left max-w-2xl">
+          I'm a full stack developer who loves anime, coding, and everything in between. I specialize in building
+          clean, efficient, and creative applications, and my favourite frameworks are NextJs, Astro and Svelte
+        </p>
+        <p class="text-lg text-center md:text-left mt-2">
+          When I'm not coding, I enjoy watching anime, playing games, and learning about new tech.
+        </p>
+      </div>
+      <img src={aboutAnimeImage.src} class="hidden md:block h-40 w-64 md:h-64 md:w-96" alt="About Anime Image" />
+    </div>
+
+    <!-- Background Elements for Cute Vibes -->
+    <div class="absolute -z-[1] top-1/3 left-20 -translate-x-1/3 -translate-y-1/3">
+      <img alt="Background Star 1" src="https://cdn.discordapp.com/attachments/1245724616337391699/1284203740735209472/XauUObZ.png?ex=66e5c76f&is=66e475ef&hm=637dfa8278a965d3f5f0008f908213ee0fec34b139d2c44fc4b1cc6216f12745&" />
+    </div>
+
+    <div class="absolute -z-[1] left-10 top-10 rotate-6">
+      <img alt="Background Star 2" src="https://cdn.discordapp.com/attachments/1245724616337391699/1284203740735209472/XauUObZ.png?ex=66e5c76f&is=66e475ef&hm=637dfa8278a965d3f5f0008f908213ee0fec34b139d2c44fc4b1cc6216f12745&" />
+    </div>
+
+    <div class="absolute -z-[2] left-20 top-20">
+      <img alt="Background Star 3" src="https://media.discordapp.net/attachments/1245724616337391699/1284203790781907045/94g0l0f.png?ex=66e5c77b&is=66e475fb&hm=379226f908c2759572aca50c3506ea385e7f0dde7d9906e576d66fb6d66a6317&=&format=webp&quality=lossless&width=35&height=37" />
+    </div>
+
+    <div class="alya absolute -z-[1] text-[600px] sm:text-[800px] md:text-[1000px] lg:text-[1500px] text-thistle-400 -rotate-45 opacity-70">
+      Alya
+    </div>
+  </main>
+</Layout>
